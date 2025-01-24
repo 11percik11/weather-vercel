@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh; /* Высота на весь экран */
+    overflow: hidden; /* Убираем лишнюю прокрутку */
+  }
+  
+  .container_header {
+    width: 530px;
+    border-left: 2px solid #00000023;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 0 20px;
+    overflow-y: auto; /* Позволяем прокручивать содержимое */
+    backdrop-filter: blur(10px)
+  }
+  
+  .container_main {
+    // background: rgb(20, 36, 36);
+    flex-grow: 1; /* Занимает оставшееся пространство */
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative; /* Остается в потоке */
+    overflow-y: auto; /* Добавляем прокрутку только для основного контента */
+    height: 100%;
+  }
+
+.snow_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  pointer-events: none;
+}
+
+.snowflake {
+  position: absolute;
+  top: 0px;
+  color: white;
+  font-size: 10px;
+  opacity: 0.3;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(95vh) translateX(calc(-5vw));
+    opacity: 0.001/* Плавное исчезновение в конце */
+  }
+}
+

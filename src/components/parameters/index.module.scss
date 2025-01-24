@@ -1,0 +1,17 @@
+.parameters {
+    width: 100%;
+}
+
+.parameters_box {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.parameters_item {
+    width: 100%;
+    text-align: left;
+}

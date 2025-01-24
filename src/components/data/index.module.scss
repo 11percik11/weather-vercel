@@ -1,0 +1,31 @@
+.data {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin: 0 0 8% 10%;
+}
+
+.data_date {
+    display: flex;
+}
+
+.data_temp {
+    font-size: 64px;
+    letter-spacing: -5px;
+}
+
+.data_location {
+    margin: 0 15px 0 15px;
+}
+
+.data_locationName {
+    font-size: 34px;
+}
+
+.data_locationDate {
+    letter-spacing: 1px;
+}
+
+.data_img {
+    height: 68px;
+}

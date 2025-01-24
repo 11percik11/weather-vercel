@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "RobotoMono";
+  src: url('./assets/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "RobotoMono";
+}
+
+
+body {
+  /* background-color: #242424; */
+  background: url("./assets/foto/99px_ru_wallpaper_347115_jarkaja_novogodnjaja_elochka_na_fone_zasnejennogo_lesa.jpg");
+}
