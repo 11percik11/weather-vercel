@@ -17,7 +17,7 @@ function Searh() {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `http://api.weatherapi.com/v1/forecast.json?key=${import.meta.env.VITE_DATA_URL_KEY}&q=${country}&days=7&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=${import.meta.env.VITE_DATA_URL_KEY}&q=${country}&days=7&aqi=no&alerts=no`
       );
       dispatch(setWeatherData(response.data));
       setData(response.data);
