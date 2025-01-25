@@ -29,3 +29,34 @@
 .data_img {
     height: 68px;
 }
+
+
+@media (max-width: 1200px) {
+    .data {
+        margin: 0 0 8vh 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .data_temp {
+        font-size: 40px;
+    }
+    .data_locationName {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 600px) {
+    .data {
+        margin: 0 0 8vh 0;
+        flex-direction: column;
+    }
+    .data_temp {
+        font-size: 52px;
+        letter-spacing: 1px;
+    }
+    .data_img {
+        height: 58px;
+    }
+}

@@ -46,7 +46,7 @@ function App() {
       <main className={styles.container_main}>
         <Data />
       </main>
-        <div ref={snowContainerRef} className={styles.snow_container}></div>
+      <div ref={snowContainerRef} className={styles.snow_container}></div>
     </div>
   );
 }
